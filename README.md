@@ -1,0 +1,4 @@
+Slider
+======
+
+jQuery Slider Project
