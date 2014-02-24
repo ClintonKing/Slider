@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Slider Project</title>
+    
+ <link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.aw-showcase.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function()
+{
+	$("#showcase").awShowcase(
+	{
+		content_width:700,
+		content_height:470,
+		fit_to_parent:false,
+		auto:false,
+		interval:3000,
+		continuous:false,
+		loading:true,
+		tooltip_width:200,
+		tooltip_icon_width:32,
+		tooltip_icon_height:32,
+		tooltip_offsetx:18,
+		tooltip_offsety:0,
+		arrows:	true,
+		buttons:true,
+		btn_numbers:true,
+		keybord_keys:true,
+		mousetrace:false,
+		pauseonover:true,
+		stoponclick:false,
+		transition:'hslide',
+		transition_delay:0,
+		transition_speed:500,
+		show_caption:'onload', 
+		thumbnails:false,
+		thumbnails_position:'outside-last', 
+		thumbnails_direction:'vertical', 
+		thumbnails_slidex:1, 
+		dynamic_height:false, 
+		speed_change:true, 
+		viewline:false, 
+		custom_function:null 
+	});
+});
+
+</script>
+<script>
+    function changeImage(a) {
+        document.getElementById("img").src=a;
+    }
+</script>
+</head>
+
+<body>
+
+<div id="showcase" class="showcase">
+    <div class="showcase-slide">
+        <div class="showcase-content">
+            <div class="showcase-content-wrapper">
+                <img src="images/UkraineStatue.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="showcase-slide">
+        <div class="showcase-content">
+            <div class="showcase-content-wrapper">
+                <img src="images/RusProp.png">
+            </div>
+            <div class="showcase-caption">
+                <img align="left" src="images/UkrainPres.png"><p>In 2013 the Ukraine found itself at a foreing-policy crossroads. The government was being courted by both the European Union and the Russian government, each seeking to establish new trade agreements and other political ties with Ukraine. A trade agreement with  the EU seemed close at hand until, on November 21, 2013, the government, presumably under pressure from Russia, suspended its attempts a deal with the EU. Yanukovych instead decides to pursue further economic ties with Russia. </p>
+            </div>
+        </div>
+    </div>
+    <div class="showcase-slide">
+        <div class="showcase-content">
+            <iframe src="http://player.vimeo.com/video/82156790?title=0&amp;byline=0&amp;portrait=0" width="700" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="showcase-caption">
+            Outraged at Yanukovych's decision, a series of protests begin to take place at Independence Square in the Captial of Kiev. The protestors number in the hundreds of thousands, demanding closer relations with the EU. The site of the protests is renamed the Euromaidan (EuroSquare) by protestors.
+        </div>
+    </div>
+    <div class="showcase-slide">
+        <div class="showcase-content">
+            <div class="showcase-content-wrapper">
+                <img src="images/EthnicMap.png">
+            </div>
+        </div>
+        <div class="showcase-caption">
+            <p>Pro and anti-government sentiments are split across clear geographic and ethnic lines. Native Ukrainians in the West call for closer ties to the EU, while those in the ethnically Russain East support the president's decision to cooperate with Moscow.</p>
+        </div>
+        <div class="showcase-tooltips">
+            <a href="#" coords="340,150">
+                <b>Kiev:</b> Ukranian Capital and location of Independence Square, which became home of the Euromaidan. Center of national protests beginning in November, city hall remains occupied through violence in February.
+            </a>
+            <a href="#" coords="85,180">
+                <b>Lviv:</b> On February 19 Lviv's regional council announces that in response to violence against protestors in Kiev, the local government will no longer operate under the authority of federal government and will instead act autonomously. 
+            </a>
+            <a href="#" coords="550,170">
+                <b>Kharkiv:</b> On February 22 Ukranian President Viktor Yanukovych flees Kiev to the easter city of Kharkiv, a more pro-Russian region of the country.
+            </a>
+        </div>
+    </div>
+    <div class="showcase-slide">
+        <div class="showcase-content">
+            <div class="showcase-content-wrapper">
+                <img src="images/barricade.png"/>
+            </div>
+        </div>
+        <div class="showcase-caption">
+            <p>In response to a few incidents of violence against protestors in late November, as well as newly passed anti-protest laws, protestors double down. Demonstrators occupy city hall and begin to build a barricade around the Euromaidan in opposition to police forces who have been ordered to break up the protests.</p>
+        </div>
+    </div>
+    <div class="showcase-slide">
+        <div class="showcase-content-wrapper">
+            <img src="images/apc.gif">
+        </div>
+        <div class="showcase-caption">
+            <p>From late January through February clashes between the Berkut (Ukranian military police) and Euromaidan protestors become increasingly violent as police attempt to break the barricades with riot gear, snipers, and even armored vehicles. Protestors respond with small arms and molotovs. Over 50 casualties are reported over the course of the violence.</p>
+        </div>
+    </div>
+    <div class="showcase-slide">
+        <div class="showcase-content">
+            <div class="showcase-content-wrapper">
+                <img id="img" src="images/BeforeMaidan.jpg">
+            </div>
+            <div class="showcase-tooltips">
+                <a href="#" coords="600,70"  onclick='changeImage("images/AfterMaidan.jpg");'>Click to see the protest's aftermath</a>
+            </div>
+        </div>
+        <div class="showcase-caption">
+            <p>February 22, 2014: With president Yanukovych and many of his party's members having fled Kiev, the opposing party gains a majority in parliment. The parliment votes Yanukovych out of power, repeals the recently passed anti-protest laws, and orders police to cease confrotations with protestors in the maidan. New elections are announced for May 2014.</p>
+        </div>
+    </div>
+    <div class="showcase-slide">
+        <div class="showcase-content">
+	    <h1><a href="http://clintonjking.com/slider/quiz">Now Try The Quiz!</a></h1>
+	</div>
+    </div>
+</div>
+
+
+</body>
+</html>
